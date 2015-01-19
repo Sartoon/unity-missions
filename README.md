@@ -25,7 +25,7 @@ Overall manager for missions.
 * Run Missions - bool
   * When set to true the Mission Manager will process missions in the Update() loop. Setting Run Missions On Start will cause this to be automatically set to true, otherwise the variable must be set an appropriate time by an external script.
 * Score Listener - IScoreListener
-  * A reference to an object that implements the IScoreListener interface. This will be passed to any newly created missions to allow missions to add scores when completed. Must be set by an external script.
+  * A reference to an object that implements the IScoreListener interface. This will be passed to any newly created missions to allow missions to add scores when completed. Must be set by an external script, preferably in Awake() to ensure any startup missions created are correctly configured.
 
 ## EventManager
 ### Required as an object in the scene
