@@ -10,22 +10,22 @@ The provided Demo project provides an easy way to see the system in action.
 Overall manager for missions. 
 ### Fields available in the Inspector
 * Start Mission Delay - float in seconds
-* * This will delay the start of any mission before it is activated. This can be used to let the user see what missions are coming up.
+  * This will delay the start of any mission before it is activated. This can be used to let the user see what missions are coming up.
 * Remove Finished Mission Delay - float in seconds
-* * This will delay the removal of any finished missions from the current mission list. This can be used to let the user see the result of missions.
+  * This will delay the removal of any finished missions from the current mission list. This can be used to let the user see the result of missions.
 * Spawn Time - float in seconds
-* * Determines how often the Mission Manager will attempt to spawn new missions. If the allowDuplicateMissions flag is set to false, or the maximumActiveMissions is set to a low number, missions may not always be spawned at this time
+  * Determines how often the Mission Manager will attempt to spawn new missions. If the allowDuplicateMissions flag is set to false, or the maximumActiveMissions is set to a low number, missions may not always be spawned at this time
 * Maximum Active Missions - int
-* * Restricts how many missions can be active at one time
+  * Restricts how many missions can be active at one time
 * Allow Duplicate Missions
-* * Determines if two missions of the same type can be active at once
+  * Determines if two missions of the same type can be active at once
 * Run Missions On Start - bool
-* * If set to true, the Mission Manager will begin processing missions when Unity calls the Start() function
+  * If set to true, the Mission Manager will begin processing missions when Unity calls the Start() function
 ### Fields hidden from the Inspector
 * Run Missions - bool
-* * When set to true the Mission Manager will process missions in the Update() loop. Setting Run Missions On Start will cause this to be automatically set to true, otherwise the variable must be set an appropriate time by an external script.
+  * When set to true the Mission Manager will process missions in the Update() loop. Setting Run Missions On Start will cause this to be automatically set to true, otherwise the variable must be set an appropriate time by an external script.
 * Score Listener - IScoreListener
-** A reference to an object that implements the IScoreListener interface. This will be passed to any newly created missions to allow missions to add scores when completed. Must be set by an external script.
+  * A reference to an object that implements the IScoreListener interface. This will be passed to any newly created missions to allow missions to add scores when completed. Must be set by an external script.
 
 ## EventManager
 ### Required as an object in the scene
